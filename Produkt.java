@@ -1,20 +1,17 @@
 public class Produkt {
-    public int id;
+    private int id;
     private String nazwa;
     private String kategoria;
     private double cena;
     private int iloscWMagazynie;
-    public void wyswietlInformacje(){
-        System.out.println("Produkt o ID:" + id + ", nazwa: " + nazwa + ", kategoria: " + kategoria + ", cena: " + cena);
 
 
-    }
 
-    public int getIdProdukt() {
+    public int getId() {
         return id;
     }
-    public void setIdProdukt(int idProdukt) {
-        this.id = idProdukt;
+    public void setId(int id) {
+        this.id = id;
 }
 public String getNazwa() {
         return nazwa;
@@ -34,5 +31,15 @@ public double getCena() {
 public void setCena(double cena) {
         this.cena = cena;
 }
+public int getIloscWMagazynie() {
+        return iloscWMagazynie;
+}
+public void setIloscWMagazynie(int iloscWMagazynie) {
+        this.iloscWMagazynie = iloscWMagazynie;
+}
+    public void wyswietlInformacje() {
+        System.out.println("ID: " + id + ", Nazwa: " + nazwa + ", Kategoria: " + kategoria +
+                ", Cena: " + cena + " zł, Ilość w magazynie: " + iloscWMagazynie);
+    }
 }
 
